@@ -56,6 +56,14 @@ int main(int argc, const char **argv)
     // user input for these values using std::cin. Pass the user input to the
     // RoutePlanner object below in place of 10, 10, 90, 90.
 
+    float start_x, start_y, end_x, end_y;
+  
+  	start_x = PromptUser("Enter number from 0 to 100 for start x value: ");
+    start_y = PromptUser("Enter number from 0 to 100 for start y value: ");
+  	end_x = PromptUser("Enter number from 0 to 100 for end x value: ");
+    end_y = PromptUser("Enter number from 0 to 100 for end y value: ");
+    // DONE
+
     // Build Model.
     RouteModel model{osm_data};
 
